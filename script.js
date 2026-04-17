@@ -1,5 +1,5 @@
 'use strict';
-const URL = `https://www.google.com/search?q=link+do+minuty+w+nagraniu`;
+const URL = `https://www.google.com/search?q=linki+do+minut+w+nagraniach`;
 // const URL = `https://www.google.com/search?&q=link+to+the+minute+in+a+recording`;
 const DEFAULT_SEPARATOR = 'gdzie';
 // const DEFAULT_SEPARATOR = 'where';
