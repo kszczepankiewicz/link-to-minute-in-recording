@@ -16,12 +16,12 @@ const openUrl = (constantUrl, variableUrl, separator = DEFAULT_SEPARATOR) => win
 
 issueForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const { value } = issueInput;
+    const issueValue = issueInput.value.toLowerCase();
     const separatorValue = issueSeparator.value.toLowerCase() || DEFAULT_SEPARATOR;
-    issueHistory.innerHTML += separatorValue + ' ' + value + '\n';
+    issueHistory.innerHTML += separatorValue + ' ' + issueValue + '\n';
     if (!SEPARATORS.includes(separatorValue)) {
         alert('Wrong separator');
         return;
     }
-    openUrl(URL, value, separatorValue);
+    openUrl(URL, issueValue, separatorValue);
 });
